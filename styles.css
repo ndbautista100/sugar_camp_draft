@@ -7,7 +7,7 @@
 
 
 .navbar {
-    background-color: #faf3f3;
+    background-color: #f5d0a0;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -110,48 +110,65 @@
 }
 
 .main{
-    background-color: #f8f5f5;
-    background: url(images/betsy.jpg);
+    background-color: #f5d0a0;
     background-size: cover;
     
-    height: 1700px;
+    
+}
+.main2{
+    background-color: #f5d0a0;
+    margin: 0 auto;
+    font-size: 3rem;
+    width: 500px;
+    text-align: center;
+    color: rgb(11, 85, 17);
+    
+    
+}
+
+.main3{
+    background-color: #f5d0a0;
+}
+
+.main3 p{
+    background-color: #f5d0a0;
+    float: left;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    text-align: left;
+    color: rgb(11, 85, 17);
+}
+
+.main3 h1{
+    background-color: #f5d0a0;
+    margin: 0 auto;
+    font-size: 3rem;
+    width: 4000px;
+    height: 100%;
+    text-align: center;
+    color: rgb(11, 85, 17);
+    
+    
+}
+
+.main3 h2{
+    background-color: #f5d0a0;
+    margin: 0 auto;
+    font-size: 2rem;
+    width: 1000px;
+    height: 100%;
+    text-align: center;
+    color: rgb(11, 85, 17);
+    
+    
 }
 .main__container{
-    display: flex;
-    grid-template-columns: 1fr 0fr;
-    align-items: center;
-    justify-self: center;
-    margin:auto 0;
-    height: 50vh;
-    z-index: 1;
-    width: 100%;
-    padding: 0 50px;
-}
-
-.main__content h1{
-    font-size: 4rem;
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #fdfcf7 0%, #0704b6 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    background-color: #f5d0a0;
     text-align: center;
-    height: 100px;
 }
 
-.main__content h2{
-    font-size: 2rem;
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #f8f7f2 0%, #fefeff 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    height:35px;
-}
+
+
 
 
 
@@ -172,29 +189,24 @@
     max-width: 100%;
     max-height: 100%;
 }
-.info{
+.main__content {
     display: flex;
     text-align: center;
     color:rgb(11, 85, 17);
-    background-color: #f8f5f5;
-    height: 500px;
+    background-color: #f5d0a0;
     
 }
 
 .img_company{
+    float: left;
+    width: 25%;
+    padding: 0px;
     text-align: center;
-    height: 825px;
-    width: 400px;
-    position: relative;
-    max-width: 100%;
-    max-height: 100%;
+    
 }
 
-.img_meloncamp{
-    text-align: center;
-    height: 825px;
-    width: 1779px;
-    position: relative;
+.img_james{
+    float: right;
     max-width: 100%;
     max-height: 100%;
 }
@@ -206,4 +218,66 @@
     position: relative;
     max-width: 100%;
     max-height: 100%;
+}
+.melon__img--container{
+    text-align: center;
+    height: 825px;
+    width: 400px;
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #f5d0a0;
+}
+.coconut__img--container{
+    
+    height: 1129px;
+    width: 400px;
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    background-color: #f5d0a0;
+    
+}
+.ogcamp__img--container{
+    text-align: center;
+    height: 1129px;
+    width: 400px;
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    background-color: #f5d0a0;
+}
+.happycamp__img--container{
+    text-align: left;
+    display: inline-block;
+    height: 1129px;
+    width: 400px;
+    position: center;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    background-color: #f5d0a0;
+}
+
+.happycamp__img--container h1{
+    float: right;
+    margin: auto;
+    background-color: #f5d0a0;
+}
+
+.melonca__img--container{
+    text-align: center;
+    height: 1129px;
+    width: 400px;
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    background-color: #f5d0a0;
+}
+
+p{
+    text-align: justify;
 }
