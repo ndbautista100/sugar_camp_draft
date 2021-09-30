@@ -8,7 +8,7 @@
 
 .navbar {
     background-color: #fdfdfc;
-    height: 150px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,6 +64,8 @@
 
 .navbar__item{
     height: 80 px;
+    padding-left: 50px;
+    
 }
 
 .navbar__links{
@@ -188,8 +190,38 @@
 .img_company2{
     float: center;
     width: 49px;
-    height: auto;
+    height: 100px;margin-top: 30px;
     
+    
+    
+}
+
+.img_shop_hat{
+    float: center;
+    width: 43px;
+    height: auto;
+    margin-right: 15px;
+    
+    
+    
+}
+
+.img_juice__time{
+    float: center;
+    width: 49px;
+    height: 100px;
+    margin-left: 20px;
+    
+    
+    
+}
+
+.img_about{
+    float: center;
+    width: 49px;
+    height: 1000px;
+    margin-left: 20px;
+    margin-right: 80px;
     
     
 }
