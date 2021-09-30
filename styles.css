@@ -8,14 +8,16 @@
 
 .navbar {
     background-color: #f5d0a0;
-    height: 80px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 2.2rem;
     position: sticky;
     top: 0;
     z-index: 999;
+    padding-bottom: 50px;
+    text-align: center;
     
 
 
@@ -34,7 +36,7 @@
 
 
 #navbar__logo{
-    background-image: linear-gradient(to top, rgb(14, 78, 33) 0%, rgb(11, 85, 17) 100%);
+    background-image: linear-gradient(to top, rgb(14, 78, 33) 0%, rgb(243, 247, 243) 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -66,7 +68,7 @@
 }
 
 .navbar__links{
-    color: rgb(11, 85, 17);
+    color: rgb(3, 3, 3);
     display: flex;
     align-items: center;
     justify-items: center;
@@ -89,7 +91,7 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    padding: 10px 20 px;
+    padding: 0 1rem;
     height: 100%;
     width: 100%;
     border: none;
@@ -116,6 +118,7 @@
     
 }
 .main2{
+    padding-top: 50px;
     background-color: #f5d0a0;
     margin: 0 auto;
     font-size: 3rem;
@@ -127,41 +130,18 @@
 }
 
 .main3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "a b"
+    "c d";
     background-color: #f5d0a0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color:rgb(14, 78, 33);
 }
 
-.main3 p{
-    background-color: #f5d0a0;
-    float: left;
-    margin: 0 auto;
-    font-size: 1.5rem;
-    text-align: left;
-    color: rgb(11, 85, 17);
-}
 
-.main3 h1{
-    background-color: #f5d0a0;
-    margin: 0 auto;
-    font-size: 3rem;
-    width: 4000px;
-    height: 100%;
-    text-align: center;
-    color: rgb(11, 85, 17);
-    
-    
-}
-
-.main3 h2{
-    background-color: #f5d0a0;
-    margin: 0 auto;
-    font-size: 2rem;
-    width: 1000px;
-    height: 100%;
-    text-align: center;
-    color: rgb(11, 85, 17);
-    
-    
-}
 .main__container{
     background-color: #f5d0a0;
     text-align: center;
@@ -202,6 +182,17 @@
     width: 25%;
     padding: 0px;
     text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50;
+    
+}
+.img_company2{
+    float: center;
+    width: 30px;
+    height: auto;
+    padding-bottom: 50px;
+    padding-top: px;
+    
     
 }
 
@@ -230,54 +221,74 @@
 }
 .coconut__img--container{
     
-    height: 1129px;
-    width: 400px;
-    position: relative;
-    max-width: 100%;
-    max-height: 100%;
+    float: left;
     margin: auto;
     background-color: #f5d0a0;
-    
+    padding-left: 50px;
 }
 .ogcamp__img--container{
-    text-align: center;
-    height: 1129px;
-    width: 400px;
-    position: relative;
-    max-width: 100%;
-    max-height: 100%;
+    float: center;
     margin: auto;
+    padding-left: 50px;
     background-color: #f5d0a0;
+    grid-area: d;
 }
 .happycamp__img--container{
-    text-align: left;
-    display: inline-block;
-    height: 1129px;
-    width: 400px;
-    position: center;
-    max-width: 100%;
-    max-height: 100%;
+    float: left;
     margin: auto;
     background-color: #f5d0a0;
+    padding-left: 50px;
+    grid-area: b;
+    padding-bottom: 50px;
 }
 
 .happycamp__img--container h1{
-    float: right;
+    float: left;
     margin: auto;
     background-color: #f5d0a0;
+    padding-bottom: 50px;
+    
 }
 
 .melonca__img--container{
-    text-align: center;
-    height: 1129px;
-    width: 400px;
-    position: relative;
-    max-width: 100%;
-    max-height: 100%;
+    float: none;
     margin: auto;
+    padding-left: 50px;
     background-color: #f5d0a0;
+    grid-area: a;
+    padding-bottom: 50px;
+    
 }
 
-p{
-    text-align: justify;
+
+
+.main__about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "a b"
+    "c d";
+    background-color: #f5d0a0;
+    color:rgb(14, 78, 33);
 }
+
+.card1
+{
+    grid-area: a;
+    text-align: center;
+    padding-top: 100px;
+}
+.card2
+{
+    grid-area: b;
+}
+.card3
+{
+    grid-area: c;
+    
+}
+.card4
+{
+    grid-area: d;
+}
+
