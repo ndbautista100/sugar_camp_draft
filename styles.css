@@ -7,8 +7,8 @@
 
 
 .navbar {
-    background-color: #f5d0a0;
-    height: 200px;
+    background-color: #fdfdfc;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,6 @@
     position: sticky;
     top: 0;
     z-index: 999;
-    padding-bottom: 50px;
     text-align: center;
     
 
@@ -112,19 +111,19 @@
 }
 
 .main{
-    background-color: #f5d0a0;
+    background-color: #fdfdfc;
     background-size: cover;
     
     
 }
 .main2{
     padding-top: 50px;
-    background-color: #f5d0a0;
+    background-color: #fdfdfc;
     margin: 0 auto;
     font-size: 3rem;
-    width: 500px;
+    width: 700px;
     text-align: center;
-    color: rgb(11, 85, 17);
+    color: rgb(7, 7, 7);
     
     
 }
@@ -135,15 +134,15 @@
     grid-template-areas: 
     "a b"
     "c d";
-    background-color: #f5d0a0;
+    background-color: #fdfdfc;
     padding-top: 50px;
     padding-bottom: 50px;
-    color:rgb(14, 78, 33);
+    color:rgb(7, 7, 7);
 }
 
 
 .main__container{
-    background-color: #f5d0a0;
+    background-color: #fdfdfc;
     text-align: center;
 }
 
@@ -173,7 +172,7 @@
     display: flex;
     text-align: center;
     color:rgb(11, 85, 17);
-    background-color: #f5d0a0;
+    background-color: #fdfdfc;
     
 }
 
@@ -217,26 +216,26 @@
     position: relative;
     max-width: 100%;
     max-height: 100%;
-    background-color: #f5d0a0;
+    background-color: #fdfdfc;
 }
 .coconut__img--container{
     
     float: left;
     margin: auto;
-    background-color: #f5d0a0;
+    background-color: #fdfdfc;
     padding-left: 50px;
 }
 .ogcamp__img--container{
     float: center;
     margin: auto;
     padding-left: 50px;
-    background-color: #f5d0a0;
+    background-color: #fdfdfc;
     grid-area: d;
 }
 .happycamp__img--container{
     float: left;
     margin: auto;
-    background-color: #f5d0a0;
+    background-color: #fdfdfc;
     padding-left: 50px;
     grid-area: b;
     padding-bottom: 50px;
@@ -245,7 +244,7 @@
 .happycamp__img--container h1{
     float: left;
     margin: auto;
-    background-color: #f5d0a0;
+    background-color: #fdfdfc;
     padding-bottom: 50px;
     
 }
@@ -254,7 +253,7 @@
     float: none;
     margin: auto;
     padding-left: 50px;
-    background-color: #f5d0a0;
+    background-color: #fdfdfc;
     grid-area: a;
     padding-bottom: 50px;
     
@@ -268,8 +267,8 @@
     grid-template-areas: 
     "a b"
     "c d";
-    background-color: #f5d0a0;
-    color:rgb(14, 78, 33);
+    background-color: #fdfdfc;
+    color:#070707;
 }
 
 .card1
