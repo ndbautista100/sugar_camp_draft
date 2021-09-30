@@ -25,7 +25,7 @@
 .navbar__container{
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 120px;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -187,10 +187,9 @@
 }
 .img_company2{
     float: center;
-    width: 30px;
+    width: 49px;
     height: auto;
-    padding-bottom: 50px;
-    padding-top: px;
+    
     
     
 }
