@@ -323,3 +323,61 @@
     grid-area: d;
 }
 
+.sidebar{
+    margin: 50px;
+    text-align: center;
+    padding-left: 100px;
+    grid-area: a;
+}
+
+
+.main_shop{
+    display: grid;
+    grid-template-columns: .59fr .1fr .1fr;
+    grid-template-areas: 
+    "a b c"
+    "d e f";
+    background-color: #fdfdfc;
+    width: 100%;
+    
+    
+    color:rgb(7, 7, 7);
+    
+}
+.img_shop_card{
+    grid-area: b;
+    margin-top: auto;
+    float: left;
+    padding-top: 50px;
+    margin: auto;
+    
+
+    
+}
+
+
+
+.img_shop_card2{
+    grid-area: c;
+    float: right;
+    margin-top: auto;
+    padding-top: 50px;
+    margin: auto;
+    
+    
+}
+.img_shop_card3{
+    grid-area: e;
+    margin-top: auto;
+    
+}
+.img_shop_card4{
+    grid-area: f;
+    margin-top: auto;
+    padding-top: 50px;
+}
+
+
+.product-info {
+    margin-top: auto;
+  }
