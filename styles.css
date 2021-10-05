@@ -326,55 +326,70 @@
 .sidebar{
     margin: 50px;
     text-align: center;
-    padding-left: 100px;
+    padding-left: 650px;
     grid-area: a;
+}
+.siderbar h5:hover{
+    background-color: #65d150;
 }
 
 
 .main_shop{
     display: grid;
-    grid-template-columns: .59fr .1fr .1fr;
+    grid-template-columns: .001fr .091fr .091fr;
+    column-gap: 5px;
     grid-template-areas: 
     "a b c"
     "d e f";
     background-color: #fdfdfc;
     width: 100%;
-    
-    
     color:rgb(7, 7, 7);
     
 }
 .img_shop_card{
     grid-area: b;
     margin-top: auto;
-    float: left;
-    padding-top: 50px;
-    margin: auto;
+    margin: 50px;
+    padding-left: 70px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.img_card_template{
+    background-image: url("images/melonc.png");
+    width: 300px;
+    height: 400px;
+    background-origin: border-box;
+    background-repeat: no-repeat;
     
+    background-size: 300px 400px;
+    background-position: 50% 50%;
+}
 
-    
+.img_card_template:hover{
+    background-image: url("images/james.jpg");
 }
 
 
 
 .img_shop_card2{
     grid-area: c;
-    float: right;
-    margin-top: auto;
-    padding-top: 50px;
-    margin: auto;
-    
-    
+    margin-top: 50px;
+    margin: 50px;
+    padding-left: 1px;
+    margin-bottom: 50px;
 }
 .img_shop_card3{
     grid-area: e;
     margin-top: auto;
-    
+    margin: 50px;
+    padding-left: 70px;
+
 }
 .img_shop_card4{
     grid-area: f;
     margin-top: auto;
-    padding-top: 50px;
+    margin: 50px;
+    padding-left: 1px;
 }
 
 
