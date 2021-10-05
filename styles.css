@@ -329,8 +329,8 @@
     padding-left: 650px;
     grid-area: a;
 }
-.siderbar h5:hover{
-    background-color: #65d150;
+.sidebar h5:hover{
+    color: #0358f5;
 }
 
 
@@ -354,7 +354,7 @@
     margin-bottom: 50px;
     width: 100%;
 }
-.img_card_template{
+.img_meloncamp_template{
     background-image: url("images/melonc.png");
     width: 300px;
     height: 400px;
@@ -365,8 +365,50 @@
     background-position: 50% 50%;
 }
 
-.img_card_template:hover{
+.img_cococamp_template{
+    background-image: url("images/cococamp.PNG");
+    width: 300px;
+    height: 400px;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    
+    background-size: 300px 400px;
+    background-position: 50% 50%;
+}
+
+.img_ogcamp_template{
+    background-image: url("images/ogcamp.PNG");
+    width: 300px;
+    height: 400px;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    
+    background-size: 300px 400px;
+    background-position: 50% 50%;
+}
+
+.img_happycamp_template{
+    background-image: url("images/happycamp.PNG");
+    width: 300px;
+    height: 400px;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    
+    background-size: 300px 400px;
+    background-position: 50% 50%;
+}
+
+.img_meloncamp_template:hover{
+    background-image: url("images/meloncamp.PNG");
+}
+.img_cococamp_template:hover{
     background-image: url("images/james.jpg");
+}
+.img_happycamp_template:hover{
+    background-image: url("images/betsy.jpg");
+}
+.img_ogcamp_template:hover{
+    background-image: url("images/pouring.PNG");
 }
 
 
