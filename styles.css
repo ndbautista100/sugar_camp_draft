@@ -4,8 +4,12 @@
   padding: 0;
   font-family: "Kumbh Sans", sans-serif;
 }
+.header {
+  background-color: #ffffff;
+  width: 100%;
+}
 .navbar {
-  background-color: #fdfdfc;
+  background-color: #ffffff;
   height: 60px;
   display: flex;
   justify-content: center;
@@ -47,16 +51,16 @@
   font-family: "Copperplate", fantasy;
 }
 .navbar-2 {
-  width: 85%;
+  width: 100%;
   margin: auto;
   padding: 35px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 999;
-  /* background-color: #fdfdfc; */
+  background-color: #ffffff;
 }
 .logo {
   width: 120px;
@@ -70,7 +74,7 @@
 }
 .navbar-2 ul li a {
   text-decoration: none;
-  color: #257bb7;
+  color: #000000;
   text-transform: uppercase;
   font-weight: bold;
   font-size: x-large;
@@ -79,7 +83,7 @@
   content: "";
   height: 3px;
   width: 0;
-  background: #257bb7;
+  background: #000000;
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -143,22 +147,24 @@
 }
 
 .navbar__links:hover {
-  color: #65d150;
+  color: #257bb7;
   transition: all 0.3s ease;
 }
 
 .main {
-  background-color: #fdfdfc;
+  background-color: #ffffff;
   background-size: cover;
 }
 .main2 {
   padding-top: 50px;
-  background-color: #fdfdfc;
+  background-color: #ffffff;
   margin: 0 auto;
   font-size: 3rem;
   width: 700px;
   text-align: center;
   color: rgb(7, 7, 7);
+  padding-bottom: 50px;
+  justify-content: center;
 }
 
 .main3 {
@@ -167,14 +173,26 @@
   grid-template-areas:
     "a b"
     "c d";
-  background-color: #fdfdfc;
+  background-color: #ffffff;
   padding-top: 50px;
   padding-bottom: 50px;
   color: rgb(7, 7, 7);
 }
 
+.main4 {
+  padding-top: 50px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  font-size: 3rem;
+  width: 800px;
+  text-align: center;
+  color: rgb(7, 7, 7);
+  padding-bottom: 50px;
+  position: relative;
+}
+
 .main__container {
-  background-color: #fdfdfc;
+  background-color: #ffffff;
   text-align: center;
 }
 
@@ -334,7 +352,7 @@
     grid-template-areas: 
     "a b"
     "c d";
-  background-color: #fdfdfc;
+  background-color: #ffffff;
   color: #070707;
 }
 
@@ -370,7 +388,7 @@
   grid-template-areas:
     "a b c"
     "d e f";
-  background-color: #fdfdfc;
+  background-color: #ffffff;
   width: 100%;
   color: rgb(7, 7, 7);
 }
@@ -558,3 +576,60 @@
   .products img{
       width: 75px;
   }
+
+.title {
+  text-align: center;
+  font-size: 90px;
+  font-weight: bold;
+  color: #fff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #257bb7;
+}
+.desc {
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #257bb7;
+}
+.row {
+  clear: both;
+  display: table;
+}
+.column {
+  width: auto;
+  max-width: 100%;
+}
+.home_gif {
+  padding: 20px;
+}
+
+.address_box {
+  background-color: #ffffff;
+  position: absolute;
+  top: 30%;
+  left: 80%;
+  width: 50%;
+  height: 40%;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  background-color: #db819b;
+  display: flex;
+  margin: auto;
+  height: 25%;
+  bottom: 100;
+  grid-row: auto;
+  justify-content: space-evenly;
+}
+
+.info_box {
+  width: 25%;
+  height: 100%;
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+  /* background-color: #000000; */
+}
