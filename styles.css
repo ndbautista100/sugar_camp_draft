@@ -355,7 +355,7 @@
     width: 100%;
 }
 .img_meloncamp_template{
-    background-image: url("images/melonc.png");
+    background-image: url("images/IMG_3774.jpg");
     width: 300px;
     height: 400px;
     background-origin: border-box;
@@ -366,7 +366,7 @@
 }
 
 .img_cococamp_template{
-    background-image: url("images/cococamp.PNG");
+    background-image: url("images/IMG_3782.jpg");
     width: 300px;
     height: 400px;
     background-origin: border-box;
@@ -377,7 +377,7 @@
 }
 
 .img_ogcamp_template{
-    background-image: url("images/ogcamp.PNG");
+    background-image: url("images/IMG_3750.jpg");
     width: 300px;
     height: 400px;
     background-origin: border-box;
@@ -399,10 +399,10 @@
 }
 
 .img_meloncamp_template:hover{
-    background-image: url("images/meloncamp.PNG");
+    background-image: url("images/IMG_3776.jpg");
 }
 .img_cococamp_template:hover{
-    background-image: url("images/james.jpg");
+    background-image: url("images/IMG_0241.jpg");
 }
 .img_happycamp_template:hover{
     background-image: url("images/betsy.jpg");
