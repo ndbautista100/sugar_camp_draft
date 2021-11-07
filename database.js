@@ -18,20 +18,29 @@ db.once('open', function() {
 
     var MerchandiseSchema = new Schema({
     name_string: String,
-    merch_price: double,
+    merch_price: Number,
     merch_desc: String
     });
  
     // compile schema to model
-    var Merch = mongoose.model('Merch', MerchSchema, 'Merchandise');
+    var Merch = mongoose.model('Merch', MerchandiseSchema, 'Merchandise');
  
     // a document instance
-    var merchandise1 = new Merch({ name: '', price: 10, quantity: 25 });
+    var merchandise1 = new Merch({ name_string: 'Betsy Vintage Tee', merch_price: 15.99, merch_desc: 'Vintage Tee with the Sugar Camp Logo' });
  
     // save model to database
-    book1.save(function (err, book) {
+    merchandise1.save(function (err, Merch) {
       if (err) return console.error(err);
-      console.log(book.name + " saved to bookstore collection.");
+      console.log(Merch.name_string + " saved to merchandise to collection.");
+        var collections = mongoose.connections[0].collections;
+        var names = [];
+
+        Object.keys(collections).forEach(function(k) {
+            names.push(k);
+        });
+
+        console.log(names);
     });
-     
+    
 });
+
