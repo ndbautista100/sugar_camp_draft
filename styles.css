@@ -376,6 +376,7 @@
   text-align: center;
   padding-left: 650px;
   grid-area: a;
+  display: flex;
 }
 .sidebar h5:hover {
   color: #0358f5;
@@ -580,7 +581,7 @@
   .main4 img{
     
     display: flex;
-    background-color: #cea0ad;
+    background-color: #db819b;
     
 }
 
