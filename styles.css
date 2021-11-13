@@ -216,6 +216,16 @@
     
 }
 
+.img_cart{
+    float: center;
+    width: 49px;
+    height: 100px;
+    margin-left: 90px;
+    
+    
+    
+}
+
 .img_about{
     float: center;
     width: 49px;
@@ -355,7 +365,7 @@
     width: 100%;
 }
 .img_meloncamp_template{
-    background-image: url("images/melonc.png");
+    background-image: url("images/IMG_3774.jpg");
     width: 300px;
     height: 400px;
     background-origin: border-box;
@@ -366,7 +376,7 @@
 }
 
 .img_cococamp_template{
-    background-image: url("images/cococamp.PNG");
+    background-image: url("images/IMG_3782.jpg");
     width: 300px;
     height: 400px;
     background-origin: border-box;
@@ -377,7 +387,7 @@
 }
 
 .img_ogcamp_template{
-    background-image: url("images/ogcamp.PNG");
+    background-image: url("images/IMG_3750.jpg");
     width: 300px;
     height: 400px;
     background-origin: border-box;
@@ -399,10 +409,10 @@
 }
 
 .img_meloncamp_template:hover{
-    background-image: url("images/meloncamp.PNG");
+    background-image: url("images/IMG_3776.jpg");
 }
 .img_cococamp_template:hover{
-    background-image: url("images/james.jpg");
+    background-image: url("images/IMG_0241.jpg");
 }
 .img_happycamp_template:hover{
     background-image: url("images/betsy.jpg");
@@ -437,4 +447,100 @@
 
 .product-info {
     margin-top: auto;
+  }
+
+  .add-cart{
+      position: center;
+  }
+
+
+  /* carthtml page*/
+
+  .container.products-container {
+      display:flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 50px;
+      padding-bottom: 100px;
+  }
+
+  .products-container{
+      max-width: 650px;
+      justify-content: space-around;
+      margin: 0 auto;
+      margin-top: 50px;
+  }
+
+  .products-container ion-icon{
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: blue;
+    font-size: 25px;
+}
+
+  .product-header{
+      width: 100%;
+      max-width: 650px;
+      display: flex;
+      justify-content: flex-start;
+      border-bottom: 4px solid lightgrey;
+      margin: 0 auto;
+  }
+
+  .product-title {
+      width: 55%;
+  }
+
+  .price{
+      width: 15%;
+      border-bottom: 1px solid lightgrey;
+      display: flex;
+      align-items: center;
+  }
+
+  .quantity{
+    width: 30%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+}
+
+  .total{
+    width: 10%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+}
+
+  .product{
+    width: 45%;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+  }
+
+  .basketTotalContainer {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      padding: 10px 0;
+  }
+  .basketTotalTitle {
+      width: 30%;
+  }
+
+  .basketTotal{
+      width: 10%;
+  }
+
+  .products{
+      width: 100%;
+      display:flex;
+      flex-wrap: wrap;
+  }
+  .products img{
+      width: 75px;
   }
