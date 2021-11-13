@@ -1,5 +1,6 @@
 let carts = document.querySelectorAll('.add-cart');
 
+
 let products = [
     {
         name: 'Betsy Vintage Tee',
@@ -80,9 +81,9 @@ function totalCost(product){
 
     if(cartCost != null){
         cartCost = parseInt(cartCost);
-        localStorage.setItem("totalCost", Math.round(100*(cartCost + product.price)/10));
+        localStorage.setItem("totalCost", cartCost + Math.round(product.price));
     }else{
-        localStorage.setItem("totalCost", product.price);
+        localStorage.setItem("totalCost", Math.round(product.price));
     }
 }
 
@@ -99,7 +100,7 @@ function displayCart(){
             productContainer.innerHTML += `
             <div class="product">
                 <ion-icon name="close-circle-outline"></ion-icon>
-                
+                <img src="./images/${item.name}.jpg">
                 <span>${item.name}</span>
             </div>
             <div class="price">$${item.price}</div>
@@ -116,10 +117,10 @@ function displayCart(){
         productContainer.innerHTML += `
         <div class="basketTotalContainer">
             <h4 class basketTotalTitle">
-                Basket Total
+                Total:
             </h4>
             <h4 class="basketTotal">
-                $${cartCost}
+                 $${cartCost}
             </h4>
         </div>`
 

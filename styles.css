@@ -489,7 +489,7 @@
   }
 
   .product-title {
-      width: 45%;
+      width: 55%;
   }
 
   .price{
@@ -540,4 +540,7 @@
       width: 100%;
       display:flex;
       flex-wrap: wrap;
+  }
+  .products img{
+      width: 75px;
   }
