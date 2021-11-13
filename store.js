@@ -13,7 +13,7 @@ let products = [
         inCart: 0
     },
     {
-        name: 'SugarCamp Sticker Roll',
+        name: 'SugarCamp Stickers',
         price: 2.99,
         inCart: 0
     }
