@@ -111,7 +111,7 @@ function displayCart(){
                 
             </div>
             <div class="total">
-                ${item.inCart * item.price} 
+                $${item.inCart * item.price} 
             </div>`
         });
         productContainer.innerHTML += `
