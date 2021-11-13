@@ -183,8 +183,8 @@
   padding-top: 50px;
   background-color: #ffffff;
   margin: 0 auto;
-  font-size: 3rem;
-  width: 800px;
+  font-size: 2rem;
+  width: 400px;
   text-align: center;
   color: rgb(7, 7, 7);
   padding-bottom: 50px;
@@ -577,6 +577,13 @@
       width: 75px;
   }
 
+  .main4 img{
+    
+    display: flex;
+    background-color: #cea0ad;
+    
+}
+
 .title {
   text-align: center;
   font-size: 90px;
@@ -609,8 +616,9 @@
   position: absolute;
   top: 30%;
   left: 80%;
-  width: 50%;
+  width: 80%;
   height: 40%;
+  text-align: center;
 }
 
 .footer {
@@ -632,4 +640,11 @@
   margin-left: 3%;
   margin-right: 3%;
   /* background-color: #000000; */
+}
+
+
+/*ion icons*/
+
+.iconify{
+    font-size: 40px;
 }
