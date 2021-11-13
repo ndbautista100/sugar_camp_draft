@@ -471,6 +471,14 @@
       margin-top: 50px;
   }
 
+  .products-container ion-icon{
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: blue;
+    font-size: 25px;
+}
+
   .product-header{
       width: 100%;
       max-width: 650px;
@@ -486,6 +494,7 @@
 
   .price{
       width: 15%;
+      border-bottom: 1px solid lightgrey;
       display: flex;
       align-items: center;
   }
@@ -505,7 +514,7 @@
 }
 
   .product{
-    width: 5%;
+    width: 45%;
     justify-content: space-around;
     display: flex;
     align-items: center;
@@ -525,4 +534,10 @@
 
   .basketTotal{
       width: 10%;
+  }
+
+  .products{
+      width: 100%;
+      display:flex;
+      flex-wrap: wrap;
   }

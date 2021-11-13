@@ -80,7 +80,7 @@ function totalCost(product){
 
     if(cartCost != null){
         cartCost = parseInt(cartCost);
-        localStorage.setItem("totalCost", cartCost + product.price);
+        localStorage.setItem("totalCost", Math.round(100*(cartCost + product.price)/10));
     }else{
         localStorage.setItem("totalCost", product.price);
     }
@@ -98,28 +98,30 @@ function displayCart(){
         Object.values(cartItems).map(item =>{
             productContainer.innerHTML += `
             <div class="product">
-                <img src="./images/IMG_3774.jpg">
+                <ion-icon name="close-circle-outline"></ion-icon>
+                
                 <span>${item.name}</span>
             </div>
             <div class="price">$${item.price}</div>
             <div class="quantity">
+                <ion-icon name="caret-back-outline"></ion-icon>
                 <span>${item.inCart}</span>
-                <ion-icon class="increase"
+                <ion-icon name="caret-forward-outline"></ion-icon>
+                
             </div>
             <div class="total">
-                $${item.inCart * item.price} 
-            </div>';
-            
-            `
+                ${item.inCart * item.price} 
+            </div>`
         });
-        productContainer.innerHTML +=`
+        productContainer.innerHTML += `
         <div class="basketTotalContainer">
             <h4 class basketTotalTitle">
                 Basket Total
             </h4>
             <h4 class="basketTotal">
                 $${cartCost}
-            </h4>`;
+            </h4>
+        </div>`
 
     }
 }
