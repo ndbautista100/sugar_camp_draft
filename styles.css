@@ -581,7 +581,7 @@
   .main4 img{
     
     display: flex;
-    background-color: #db819b;
+    background-color: #fdfdfd;
     
 }
 
@@ -613,8 +613,8 @@
 }
 
 .address_box {
-  background-color: #ffffff;
-  position: absolute;
+  background-color: #f8ebcf;
+  position: left;
   top: 30%;
   left: 80%;
   width: 80%;
