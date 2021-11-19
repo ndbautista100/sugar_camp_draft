@@ -180,7 +180,7 @@
 }
 
 .main4 {
-  padding-top: 50px;
+  
   background-color: #db819b;
   margin: 0 auto;
   font-size: 2rem;
@@ -226,7 +226,7 @@
     width: 25%;
     padding: 0px;
     text-align: center;
-    padding-bottom: 50px;
+    
     padding-top: 50;
     
 }
@@ -578,7 +578,7 @@
       width: 75px;
   }
 
-  .main4 img{
+  .main4{
     
     display: flex;
     background-color: #fdfdfd;
@@ -610,39 +610,68 @@
 }
 .home_gif {
   padding: 20px;
+  float: relative;
+  left: 80px;
 }
 
 .address_box {
-  background-color: #f8ebcf;
   position: absolute;
   top: 30%;
-  left: 80%;
+  left: 50%;
   width: 80%;
+  right: 100px;
   height: 40%;
   text-align: center;
+  color:#978f56;
 }
 
 .footer {
-  position: absolute;
+  position: relative;
   width: 100%;
-  background-color: #db819b;
+  background-color: #ffffff;
   display: flex;
   margin: auto;
-  height: 25%;
+  height: 50%;
   bottom: 100;
   grid-row: auto;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+
+.footer--block {
+  flex: 1 1 auto;
+  display: flex;
+
 }
 
 .info_box {
-  width: 25%;
+  width: 90%;
   height: 100%;
   margin-top: 3%;
   margin-left: 3%;
   margin-right: 3%;
+  font-family: Lato;
   /* background-color: #000000; */
+  color:#978f56;
+  justify-content: space-evenly;
+  padding-left: 200px;
 }
 
+.gif_img{
+  vertical-align: middle;
+  position: relative;
+  max-width: 150%;
+  height: 80%;
+  right: 500px;
+  
+}
+
+/*google map api */
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
 
 /*ion icons*/
 
