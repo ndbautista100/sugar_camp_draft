@@ -614,7 +614,7 @@
 
 .address_box {
   background-color: #f8ebcf;
-  position: left;
+  position: absolute;
   top: 30%;
   left: 80%;
   width: 80%;
