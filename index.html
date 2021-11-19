@@ -89,34 +89,46 @@
         </div>
     </div>
     <div class="main4">
-        <img src="images/IMG_0257.GIF" width="70%"/>
+        <img class="gif_img" src="images/IMG_0257.GIF" width="100%"/>
         <div class="address_box">
-          <h4>Our Schedule:</h4>
+          <h4>OUR SCHEDULE:</h4>
           <br>
-          <h6>Friday at LakeWood YMCA 4pm-8pm</h6>
+          <h6>FRIDAY AT LAKEWOOD YMCA 4PM-8PM</h6>
           <br>
-          <h6>Saturday at GoldenWest College 8am-3pm</h6>
+          <h6>SATURDAY AT GOLDENWEST COLLEGE 8AM-3PM</h6>
+          <div id="map"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer--block">
+          <span class="info_box">
+            <h1>SUGAR CAMP</h1><br />
+            <h3>EMAIL: sugarcamp2000@gmail.com</h3>
+            <a href="https://www.instagram.com/thesugarcamp/?hl=en">
+                <img src="images/ig_logo.png" width="20px"></a>
+            <a href="https://www.tiktok.com/@thesugarcamp">
+              <img src="images/tiktok_logo.png" width="20px">
+            </a>
+          
+        </div>
+        
+        <div class="footer--block">
+          <span class="info_box"><h1>LAKEWOOD, CA</h1><br />FRIDAY AT 5835 EAST CARSON STREET, LAKEWOOD, CA 90713</span>
+        </div>
+        
+        <div class="footer--block">
+        <span class="info_box"><h1>HUNTINGTON BEACH, CA</h1><br />SATURDAY AT 15744 GOLDENWEST ST., HUNTINGTON BEACH CA 92647 <br />( FACING GOLDENWEST ST., SLOT L10)</span>
         </div>
       </div>
-      <div class="footer">
-        <span class="info_box">
-            <h1>Sugar Camp</h1><br />
-            <h3>Email: sugarcamp2000@gmail.com</h3>
-            <a href="https://www.instagram.com/thesugarcamp/?hl=en">
-                <span class="iconify" data-icon="ion:logo-instagram"></span>
-            </a>
-            <a href="https://www.tiktok.com/@thesugarcamp">
-                <span class="iconify" data-icon="ion:logo-tiktok"></span>
-            </a>
-        </span>
-        <span class="info_box"></span>
-        <span class="info_box"></span>
-        <span class="info_box"><h1>Lakewood, CA</h1><br />Friday at 5835 East Carson Street, Lakewood, CA 90713</span>
-        <span class="info_box"></span>
-        <span class="info_box"></span>
-        <span class="info_box"><h1>Huntington Beach, CA</h1><br />Saturday at 15744 Goldenwest St., Huntington Beach CA 92647 ( Facing Goldenwest St., Slot L10)</span>
-      </div>
-    </div>
+    
+
+     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC54jVDdNQcRlGPmKNWPQuOZ1r4TyxMjto&callback=initMap&libraries=&v=weekly"
+  async
+></script>
   </body>
+ 
+<script src="maps.js"></script>
   <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 </html>
