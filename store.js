@@ -122,7 +122,11 @@ function displayCart(){
             <h4 class="basketTotal">
                  $${cartCost}
             </h4>
+            <a href="payment.html">
+                <button type="button">Checkout</button>
+            </a>
         </div>`
+        
 
     }
 }
