@@ -12,4 +12,6 @@ function initMap() {
       position: uluru,
       map: map,
     });
+    map.setZoom(17);
+    map.panTo(marker.position);
   }
