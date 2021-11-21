@@ -1,26 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The SugarCamp</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--<nav class="navbar-2">
+      <img src="./images/SC5b.png" alt="The Sugar Camp Logo" class="logo" />
+      <ul>
+        <li><a href="drinks.html" class="navbar__links">Drinks</a></li>
+        <li><a href="shop.html" class="navbar__links">Shop</a></li>
+        <li><a href="about.html" class="navbar__links">About</a></li>
+      </ul>
+    </nav> -->
     <nav class="navbar">
-        <div class="navbar__container">
-            
-            <div class="img_company2">
-                <a href="/" id="navbar__logo">
-                <img src="images/SC7b.png" alt="pic" style="width:500.5%" href="/">
-                </a>
+      <div class="navbar__container">
+        <div class="img_company2">
+          <a href="/" id="navbar__logo">
+            <img
+              src="images/SC7b.png"
+              alt="pic"
+              style="width: 500.5%"
+              href="/"
+            />
+          </a>
+        </div>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="img_about">
+            <a href="/about.html" class="navbar__links">
+              <img
+                src="images/about_us.png"
+                alt="pic"
+                style="width: 700.5%"
+                href="/"
+              />
+            </a>
+          </li>
+          <li class="navbar__item">
+            <div class="img_shop_hat">
+              <a href="/shop.html" class="navbar__links">
+                <img
+                  src="images/bold_shop.png"
+                  alt="pic"
+                  style="width: 900.5%"
+                  href="/"
+                />
+              </a>
             </div>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-        
+          </li>
+          <li class="navbar__item">
+            <div class="img_juice__time">
+              <a href="/drinks.html" class="navbar__links">
+                <img
+                  src="images/SC14b.png"
+                  alt="pic"
+                  style="width: 900.5%"
+                  href="/"
+                />
+              </a>
             </div>
             <ul class="navbar__menu">
                 <li class="img_about">
@@ -54,32 +99,63 @@
         </div>
     </nav>
     <div class="main">
-        <div class="main__container">
-            <div class="row">
-                <div class="img_company">
-                    <img src="images/jameswork.PNG" alt="pic" style="width:100.5%">
-                </div>
-                <div class="img_company">
-                    <img src="images/meloncamp.PNG" alt="pic" style="width:100.5%">
-                </div>
-                <div class="img_company">
-                    <img src="images/quimelon.PNG" alt="pic" style="width:106%">
-                </div>
-                <div class="img_company">
-                    <img src="images/pouring.PNG" alt="pic" style="width:100.5%">
-                </div>
-            </div>
+      <div class="main__container">
+        <div class="row">
+          <div class="img_company">
+            <img src="images/jameswork.PNG" alt="pic" class="column" />
+          </div>
+          <div class="img_company">
+            <img src="images/meloncamp.PNG" alt="pic" class="column" />
+          </div>
+          <div class="img_company">
+            <img src="images/quimelon.PNG" alt="pic" style="width: 105.5%" />
+          </div>
+          <div class="img_company">
+            <img src="images/pouring.PNG" alt="pic" style="width: 99.9%" />
+          </div>
         </div>
-        <div class="main2"> 
-            <img src="images/SC9b.png" alt="pic" style="width:50.5%">
+    </div>
+    <div class="main4">
+        <img class="gif_img" src="images/IMG_0257.GIF" width="100%"/>
+        <div class="address_box">
+          <h4>OUR SCHEDULE:</h4>
+          <br>
+          <h6>FRIDAY AT LAKEWOOD YMCA 4PM-8PM</h6>
+          <br>
+          <h6>SATURDAY AT GOLDENWEST COLLEGE 8AM-3PM</h6>
+          <div id="map"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer--block">
+          <span class="info_box">
+            <h1>SUGAR CAMP</h1>
+            EMAIL: sugarcamp2000@gmail.com<br>
+            <a href="https://www.instagram.com/thesugarcamp/?hl=en">
+                <img src="images/ig_logo.png" width="25px"></a>
+            <a href="https://www.tiktok.com/@thesugarcamp">
+              <img src="images/tiktok_logo.png" width="25px"></a>
+            <a href="https://www.yelp.com/biz/sugar-camp-huntington-beach"><img src="images/yelp_icon.png" width="25px"></a>
+          </span>
         </div>
         
-    </div>
+        <div class="footer--block">
+          <span class="info_box"><h1>LAKEWOOD, CA</h1><br />FRIDAY AT 5835 EAST CARSON STREET, LAKEWOOD, CA 90713</span>
+        </div>
+        
+        <div class="footer--block">
+        <span class="info_box"><h1>HUNTINGTON BEACH, CA</h1><br />SATURDAY AT 15744 GOLDENWEST ST., HUNTINGTON BEACH CA 92647 <br />( FACING GOLDENWEST ST., SLOT L10)</span>
+        </div>
+      </div>
     
-    
-    
-    
-    
-</body>
-<script src="store.js"> </script>
+
+     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC54jVDdNQcRlGPmKNWPQuOZ1r4TyxMjto&callback=initMap&libraries=&v=weekly"
+  async
+></script>
+  </body>
+ <script src="store.js"></script>
+<script src="maps.js"></script>
+  <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 </html>
