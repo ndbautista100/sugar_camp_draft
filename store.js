@@ -131,7 +131,7 @@ function remove(product){
         if (favs[span_Text]) {  //check if key exists 
             delete favs[span_Text];
             cost =  Math.round(cost - span_Price); //remove the key from object
-            cartNum = cartNum - cartNum;
+            cartNum = cartNum - 1;
         }
         window.localStorage.productsInCart = JSON.stringify(favs);  //save it back
         window.localStorage.cartNumbers = JSON.stringify(cartNum);
