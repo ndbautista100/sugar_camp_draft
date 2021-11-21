@@ -262,9 +262,10 @@
 .img_cart{
     float: center;
     width: 49px;
-    height: 100px;
-    margin-left: 90px;
-    
+    height: 49px;
+    margin-left: 20px;
+    background-image: url("images/SC5b.png");
+    position: relative;
     
     
 }
@@ -272,7 +273,7 @@
 .img_about{
     float: center;
     width: 49px;
-    height: 1000px;
+    height: 49px;
     margin-left: 20px;
     margin-right: 80px;
     
