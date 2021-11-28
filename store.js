@@ -160,9 +160,10 @@ function remove(product){
     
 }
 
-function removeAll(){
+function removeAll(prod){
     const EL_button = event.currentTarget;
     //const id = this.closest("span"); // i.e: "245"
+    console.log(prod.id);
     var span_Text = document.getElementById("span_id").innerText;
     var span_Price = document.getElementById("span_price").innerText;
     var span_Quantity = document.getElementById("span_quantity").innerText;
@@ -171,8 +172,8 @@ function removeAll(){
     var favs = JSON.parse(window.localStorage.productsInCart || {});  //read and convert to object
     var cartNum = JSON.parse(window.localStorage.cartNumbers || {});
     var cost = parseInt(JSON.parse(window.localStorage.totalCost || {}));
-    if (favs[span_Text]) {  //check if key exists 
-        delete favs[span_Text];
+    if (favs[prod.id]) {  //check if key exists 
+        delete favs[prod.id];
         cost =  Math.round(cost - (span_Quantity * span_Price)); //remove the key from object
         cartNum = cartNum - cartNum;
     }
@@ -189,7 +190,7 @@ function displayCart(){
     let cartItems = localStorage.getItem("productsInCart");
     cartItems = JSON.parse(cartItems);
     let productContainer = document.querySelector(".products");
-    console.log(productContainer);
+    
     let cartCost = localStorage.getItem('totalCost');
 
     if( cartItems && productContainer ){
@@ -197,10 +198,10 @@ function displayCart(){
         Object.values(cartItems).map(item =>{
             if(item.stock > 1){
                 productContainer.innerHTML += `
-            <div class="product">
+            <div class="product" >
                 <img src="./images/${item.name}.jpg">
                 <span>${item.name}</span>
-                    <ion-icon name="close-circle-outline" onClick="removeAll()">
+                    <ion-icon name="close-circle-outline" id="${item.name}" onClick="removeAll(this)">
                     <span id="span_id" style="display:none">${item.name}</span>
                     <span id="span_price" style="display:none">${item.price}</span>
                     <span id="span_quantity" style="display:none">${item.inCart}</span>
@@ -230,7 +231,7 @@ function displayCart(){
             <div class="product">
                 <img src="./images/${item.name}.jpg">
                 <span>${item.name}</span>
-                    <ion-icon name="close-circle-outline" onClick="removeAll()">
+                    <ion-icon name="close-circle-outline" id="${item.name}" onClick="removeAll(this)">
                     <span id="span_id" style="display:none">${item.name}</span>
                     <span id="span_price" style="display:none">${item.price}</span>
                     <span id="span_quantity" style="display:none">${item.inCart}</span>
