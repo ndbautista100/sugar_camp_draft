@@ -37,18 +37,7 @@ h2 {
 .dropdown {
   position:relative;
 }
-ul {
-  margin:0;
-  padding:0;
-}
-ul li {
-  list-style:none;
-  padding-left:10px;
-  cursor:pointer;
-}
-ul li:hover {
-  background:rgba(255,255,255,0.1);
-}
+
 .dropdown-select {
   position:absolute;
   background:#77aaee;
@@ -274,4 +263,142 @@ ul li:hover {
   .pay-btn {
     border-radius:0px;
   }
+}
+.wrapper {
+  width: 700px;
+  height: 60px;
+  position: relative;
+}
+
+.form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 76%;
+}
+.is-form .form {
+  z-index: 2;
+}
+
+input {
+  display: block;
+  width: 47%;
+  height: 60px;
+  padding: 15px 26px 15px;
+  font-size: 18px;
+  outline: 0;
+  border: 1px solid silver;
+  border-radius: 3px;
+}
+input:focus {
+  border: 1px solid #01a084;
+}
+
+button {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  border-radius: 3px;
+  white-space: nowrap;
+  outline: 0;
+  display: block;
+  padding: 15px 26px 15px;
+  background: #01a084;
+  border: 2px solid #01a084;
+  color: white;
+  font-size: 22px;
+  letter-spacing: 0.05rem;
+  width: 60%;
+  position: absolute;
+  z-index: 2;
+  transition: all 200ms ease-out;
+  /*
+  * Icons
+  */
+}
+button span {
+  padding-left: 20px;
+}
+button .form-label,
+button .notify-off-label {
+  display: none;
+}
+button.notify {
+  top: 0;
+  left: 0;
+  display: none;
+}
+.is-notify button.notify {
+  background: transparent;
+  border: solid 2px silver;
+}
+.is-notify button.notify .notify-label {
+  display: none;
+}
+.is-notify button.notify .notify-off-label {
+  display: inline-block;
+  font-size: 18px;
+  color: silver;
+}
+button.newsletter {
+  top: 0;
+  right: 0;
+  margin-left: 20px;
+}
+.is-form button.newsletter {
+  width: 20%;
+}
+.is-form button.newsletter .start-label {
+  display: none;
+}
+.is-form button.newsletter .form-label {
+  display: inline-block;
+  font-size: 18px;
+}
+button .notify-icon,
+button .newsletter-icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 100;
+  margin-top: -12px;
+}
+button .notify-icon {
+  width: 22px;
+  height: 24px;
+  transition: all 200ms ease-out;
+  transform: translateX(65px) rotate(10deg);
+  transform-origin: center center;
+}
+button .notify-icon .notify-off-line {
+  opacity: 0;
+}
+.is-notify button .notify-icon {
+  transform: translateX(45px) rotate(0deg);
+}
+.is-notify button .notify-icon path {
+  fill: #949494;
+}
+.is-notify button .notify-icon .notify-off-line {
+  opacity: 1;
+}
+.is-notify button .notify-icon .notify-off-line:first-child {
+  stroke: #949494;
+}
+.is-notify button .notify-icon .notify-off-line:last-child {
+  stroke: #f7f7f7;
+}
+button .newsletter-icon {
+  width: 24px;
+  height: 24px;
+  transition: all 200ms ease-out;
+  transform: translateX(55px);
+}
+.is-form button .newsletter-icon {
+  transform: translateX(15px);
 }
