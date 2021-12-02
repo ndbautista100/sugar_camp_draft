@@ -3,7 +3,7 @@ var app = express();
 var port = 3000;
 var bodyParser = require('body-parser');
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: false }));
 
 //connect to mongoDB
 const dbURI= 'mongodb+srv://devUser:dev123@cluster0.89lku.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
@@ -29,15 +29,15 @@ db.once('open', function() {
 var nameSchema = new mongoose.Schema({
   Name: String,
   Email: String
- });
+ }, {collection: 'users'});
 
- var User = mongoose.model("User", nameSchema);
+var User = mongoose.model("User", nameSchema);
  
  app.use("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
  });
 
-app.post("/submit", (req, res) => {
+app.post("/add", (req, res) => {
   var myData = new User(req.body);
   myData.save()
   .then(item => {
