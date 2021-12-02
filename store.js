@@ -231,10 +231,10 @@ function displayCart(){
             <div class="product">
                 <img src="./images/${item.name}.jpg">
                 <span>${item.name}</span>
-                    <ion-icon name="close-circle-outline" id="${item.name}" onClick="removeAll(this)">
-                    <span id="span_id" style="display:none">${item.name}</span>
-                    <span id="span_price" style="display:none">${item.price}</span>
-                    <span id="span_quantity" style="display:none">${item.inCart}</span>
+                    <ion-icon name="close-circle-outline" id="${item.name}" onClick="remove()">
+                    <span id="span_remid" style="display:none">${item.name}</span>
+                    <span id="span_remprice" style="display:none">${item.price}</span>
+                    <span id="span_remquantity" style="display:none">${item.inCart}</span>
                     </ion-icon>
                 
             </div>
