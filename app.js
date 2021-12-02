@@ -37,15 +37,13 @@ var User = mongoose.model("User", nameSchema);
   res.sendFile(__dirname + "/index.html");
  });
 
-app.post("/add", (req, res) => {
-  var myData = new User(req.body);
-  myData.save()
-  .then(item => {
-  res.send("item saved to database");
-  })
-  .catch(err => {
-  res.status(400).send("unable to save to database");
-  });
+
+ app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/index.html");
+ });
+
+app.post("/", function(req, res){
+  
  });
  
 app.listen(port, () => {
