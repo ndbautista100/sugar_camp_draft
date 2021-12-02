@@ -328,20 +328,31 @@
   background-color: #fdfdfc;
 }
 .coconut__img--container {
-  float: left;
+  float: none;
   margin: auto;
-  background-color: #fdfdfc;
   padding-left: 50px;
+  background-color: #fdfdfc;
+  padding-bottom: 50px;
+  grid-area: c;
+}
+
+.coconut__img--container p{
+  color: #978f56;
 }
 .ogcamp__img--container {
-  float: center;
+  float: none;
   margin: auto;
   padding-left: 50px;
   background-color: #fdfdfc;
   grid-area: d;
+  padding-bottom: 50px;
+}
+
+.ogcamp__img--container  p{
+  color: #978f56;
 }
 .happycamp__img--container {
-  float: left;
+  float: none;
   margin: auto;
   background-color: #fdfdfc;
   padding-left: 50px;
@@ -354,6 +365,11 @@
   margin: auto;
   background-color: #fdfdfc;
   padding-bottom: 50px;
+  color: #978f56;
+}
+.happycamp__img--container p {
+  
+  color: #978f56;
 }
 
 .melonca__img--container {
@@ -363,6 +379,10 @@
   background-color: #fdfdfc;
   grid-area: a;
   padding-bottom: 50px;
+}
+
+.melonca__img--container p {
+  color: #978f56;
 }
 
 .main__about {
@@ -413,7 +433,7 @@
 }
 
 .sidebar h5:hover {
-  color: #0358f5;
+  color: #978f56;
 }
 
 .main_shop {
@@ -743,4 +763,41 @@
 
 .iconify {
   font-size: 40px;
+}
+
+.contact-header {
+  margin-top: 50px;
+  font-size: 50px;
+  text-align: center;
+}
+.contact-container {
+  display: block;
+  text-align: center;
+}
+
+.form-container {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.contact-container-child {
+  width: 500px;
+  height: 40px;
+  margin-top: 20px;
+  display: flex;
+}
+
+.button {
+  width: 100px;
+  height: 40px;
+  margin-top: 20px;
+  display: flex;
+  background-color: black;
+  color: white;
+}
+
+.button :hover {
+  color: blue;
 }

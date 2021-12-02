@@ -172,10 +172,12 @@ function removeAll(prod){
     var favs = JSON.parse(window.localStorage.productsInCart || {});  //read and convert to object
     var cartNum = JSON.parse(window.localStorage.cartNumbers || {});
     var cost = parseInt(JSON.parse(window.localStorage.totalCost || {}));
+    console.log("cart numbers", typeof(favs[prod.id].inCart));
     if (favs[prod.id]) {  //check if key exists 
+        cartNum = cartNum - favs[prod.id].inCart;
         delete favs[prod.id];
         cost =  Math.round(cost - (span_Quantity * span_Price)); //remove the key from object
-        cartNum = cartNum - cartNum;
+        //cartNum = cartNum - favs[prod.id].inCart;
     }
     window.localStorage.productsInCart = JSON.stringify(favs);  //save it back
     window.localStorage.cartNumbers = JSON.stringify(cartNum);
@@ -231,10 +233,10 @@ function displayCart(){
             <div class="product">
                 <img src="./images/${item.name}.jpg">
                 <span>${item.name}</span>
-                    <ion-icon name="close-circle-outline" id="${item.name}" onClick="removeAll(this)">
-                    <span id="span_id" style="display:none">${item.name}</span>
-                    <span id="span_price" style="display:none">${item.price}</span>
-                    <span id="span_quantity" style="display:none">${item.inCart}</span>
+                    <ion-icon name="close-circle-outline" id="${item.name}" onClick="remove()">
+                    <span id="span_remid" style="display:none">${item.name}</span>
+                    <span id="span_remprice" style="display:none">${item.price}</span>
+                    <span id="span_remquantity" style="display:none">${item.inCart}</span>
                     </ion-icon>
                 
             </div>
