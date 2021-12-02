@@ -1,95 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The SugarCamp</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Shrikhand' rel='stylesheet'>
-<style>
-h1{
-    font-family: 'Shrikhand';font-size: 22px; color: #000000; text-decoration: none;
-}
-</style>
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Shrikhand"
+      rel="stylesheet"
+    />
+    <style>
+      h1 {
+        font-family: "Shrikhand";
+        font-size: 22px;
+        color: #000000;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="navbar__container">
-          <div class="img_company2">
-            <a href="/" id="navbar__logo">
-              <img
-                src="images/SC7b.png"
-                alt="pic"
-                style="width: 500.5%"
-                href="/"
-              />
-            </a>
-          </div>
-          <div class="navbar__toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-          <ul class="navbar__menu">
-            <li class="img_about">
+      <div class="navbar__container">
+        <div class="img_company2">
+          <a
+            href="/"
+            style="
+              align-items: center;
+              justify-content: center;
+              width: 50%;
+              height: 100%;
+            "
+          >
+            <img
+              src="images/SC7b.png"
+              alt="pic"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                padding: 3%;
+              "
+              href="/"
+            />
+          </a>
+        </div>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <div class="navbar__item">
+            <div class="navbar__img__container">
               <a href="/about.html" class="navbar__links">
                 <img
                   src="images/about_us.png"
                   alt="pic"
-                  style="width: 690.5%"
+                  style="width: 100%; height: 100%; object-fit: contain"
                   href="/"
                 />
               </a>
-            </li>
-            <li class="navbar__item">
-              <div class="img_shop_hat">
-                <a href="/shop.html" class="navbar__links">
-                  <img
-                    src="images/bold_shop.png"
-                    alt="pic"
-                    style="width: 800.5%"
-                    href="/"
-                  />
-                </a>
-              </div>
-            </li>
-              
-              <li class="navbar__item">
-                      <div class="img_juice__time">
-                          <a href="/drinks.html" class="navbar__links">
-                              <img src="images/fruitjuice.png" alt="pic" style="width:360.5%" href="/">
-                          </a>
-                      </div>
-              </li>
-              <li class="navbar__item">
-                      <div class="img_cart">
-                          <a href="/shopping_cart.html" class="navbar__links">
-                              <img src="images/shoppingcart.png" alt="pic" style="width:360.5%" href="/">
-                              <span>0</span>
-                          </a>
-                      </div>
-              </li>
-              
+            </div>
           </div>
-      </nav>
-      <h1 class="contact-header">
-          CONTACT US
-      </h1>
-      <div class="contact-container">
-        <form class="form-container">
+          <div class="navbar__item">
+            <div class="navbar__img__container">
+              <a href="/shop.html" class="navbar__links">
+                <img
+                  src="images/bold_shop.png"
+                  alt="pic"
+                  style="width: 100%; height: 100%; object-fit: contain"
+                  href="/"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="navbar__item">
+            <div class="navbar__img__container">
+              <a href="/drinks.html" class="navbar__links">
+                <img
+                  src="images/fruitjuice.png"
+                  alt="pic"
+                  style="width: 100%; height: 100%; object-fit: contain"
+                  href="/"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="navbar__item">
+            <div class="navbar__img__container">
+              <a href="/shopping_cart.html" class="navbar__links">
+                <img
+                  src="images/shoppingcart.png"
+                  alt="pic"
+                  style="width: 90%; height: 100%; object-fit: contain"
+                  href="/"
+                />
+                <span style="font-size: 1.5vw; width: 10%">0</span>
+              </a>
+            </div>
+          </div>
 
-            <input class="contact-container-child" type="text" id="name" name="name" placeholder="name">
-        
-            <input class="contact-container-child" type="text" id="email" name="email" placeholder="email">
+          <!-- <div class="navbar__item">
+          <div class = 'img_about_us'>
+            <a href="/about.html" class="navbar__links">
+              <img
+                src="images/about_us.png"
+                alt="pic"
+                style="object-fit: contain;"
+                href="/"
+              />
+          </div>
+        </div>
+        <div class="navbar__item">
+          <div class="img_shop_hat">
+            <a href="/shop.html" class="navbar__links">
+              <img
+                src="images/bold_shop.png"
+                alt="pic"
+                style="object-fit: contain;"
+                href="/"
+              />
+            </a>
+          </div>
+        </div>
 
-            <input class="contact-container-child" type="text" id="phone" name="phone" placeholder="phone number">
-        
-            <textarea class="contact-container-child" id="message" name="message" placeholder="message" style="height:200px"></textarea>
-        
-            <button class="button" type="button">Submit</button>
-        
-          </form>
+        <div class="navbar__item">
+          <div class="img_juice__time">
+            <a href="/drinks.html" class="navbar__links">
+              <img
+                src="images/fruitjuice.png"
+                alt="pic"
+                style="object-fit: contain;"
+                href="/"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="navbar__item">
+          <div class="img_cart">
+            <a href="/shopping_cart.html" class="navbar__links">
+              <img
+                src="images/shoppingcart.png"
+                alt="pic"
+                style="object-fit: contain;"
+                href="/"
+              />
+              <span>0</span>
+            </a>
+          </div>
+        </div> -->
+        </ul>
       </div>
-</body>
+    </nav>
+    <h1 class="contact-header">CONTACT US</h1>
+    <div class="contact-container">
+      <form class="form-container">
+        <input
+          class="contact-container-child"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="name"
+        />
+
+        <input
+          class="contact-container-child"
+          type="text"
+          id="email"
+          name="email"
+          placeholder="email"
+        />
+
+        <input
+          class="contact-container-child"
+          type="text"
+          id="phone"
+          name="phone"
+          placeholder="phone number"
+        />
+
+        <textarea
+          class="contact-container-child"
+          id="message"
+          name="message"
+          placeholder="message"
+          style="height: 200px"
+        ></textarea>
+
+        <button class="button" type="button">Submit</button>
+      </form>
+    </div>
+  </body>
 </html>
