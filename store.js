@@ -172,10 +172,12 @@ function removeAll(prod){
     var favs = JSON.parse(window.localStorage.productsInCart || {});  //read and convert to object
     var cartNum = JSON.parse(window.localStorage.cartNumbers || {});
     var cost = parseInt(JSON.parse(window.localStorage.totalCost || {}));
+    console.log("cart numbers", typeof(favs[prod.id].inCart));
     if (favs[prod.id]) {  //check if key exists 
+        cartNum = cartNum - favs[prod.id].inCart;
         delete favs[prod.id];
         cost =  Math.round(cost - (span_Quantity * span_Price)); //remove the key from object
-        cartNum = cartNum - cartNum;
+        //cartNum = cartNum - favs[prod.id].inCart;
     }
     window.localStorage.productsInCart = JSON.stringify(favs);  //save it back
     window.localStorage.cartNumbers = JSON.stringify(cartNum);
