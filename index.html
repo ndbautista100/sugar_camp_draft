@@ -214,6 +214,13 @@
             <!-- <div style="align-items: center; justify-content: center"> -->
             <div id="map" style="width: 100%"></div>
             <!-- </div> -->
+            <!--<form method="POST" action="/api/user">
+              <label for="">Firstname</label>
+              <input type="text" name="firstname" id="first"><br>
+              <label for="">Lastname</label>
+              <input type="text" name="lastname" id="last"><br>
+              <input type="submit">
+          </form>-->
           </div>
         </div>
         <div class="footer">
@@ -272,9 +279,11 @@
                 <span class="notify-label">Get Notifications</span>
                 <span class="notify-off-label">Turn Off Notifications</span>
               </button>
-              <div class="form">
+              <div class="form" id="myform">
+                <!--<form method="POST" action="/api/user">-->
                 <input class="email-input" placeholder="Your email here." />
                 <input class="name-input" placeholder="Your name here." />
+              
               </div>
               <button class="newsletter">
                 <!-- <div class="newsletter-icon">
