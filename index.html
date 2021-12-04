@@ -279,16 +279,17 @@
                 <span class="notify-label">Get Notifications</span>
                 <span class="notify-off-label">Turn Off Notifications</span>
               </button>-->
-              
-                <form method="POST" action="/api/user" class="form-inline">
-                <div>
-                  <input class="email-input" placeholder="Your email here." name="name" />
+              <div class="wrapper">
+                <form method="POST" action="/api/user" class="form-container" >
+                <div style="float: left">
+                  <input class="email-input" placeholder="Your email" name="name" />
                 </div>
+                <div style="clear:both; left: 50%">&nbsp;</div>
                 <div>
-                  <input class="name-input" placeholder="Your name here." name="email"/>
+                  <input class="form-label" type="submit" value="Subscribe!"  style="background-color: #978f56; color: white">
                 </div>
-                <input class="form-label" type="submit" value="Subscribe!">
                 </form>
+              </div>
               
               
               <!--<button class="newsletter" type="submit">
