@@ -2,7 +2,8 @@ var express = require("express");
 var app = express();
 var port = 3000;
 var bodyParser = require('body-parser');
-const UserModel = require("./models/user")
+const UserModel = require("./models/user");
+const ContactModel = require("./models/contact");
 app.use(express.urlencoded({extended: true}));
 app.use(express.json()) // To parse the incoming requests with JSON payloads
 
@@ -46,7 +47,24 @@ app.use(express.static(__dirname));
   res.redirect("/");
   
 });
+
+
+app.post("/api/contact", (req, res)=>{
+  console.log(req.body);
+ const contact = new ContactModel({
+   Name: req.body.name,
+   Email: req.body.email,
+   Phone: req.body.phone,
+   Message: req.body.message
+   // ...
+ });
+ contact.save();
+ res.redirect("/contact.html");
+ 
+});
  
 app.listen(port, () => {
  console.log("Server listening on port " + port);
 });
+
+
