@@ -220,7 +220,7 @@
               <label for="">Lastname</label>
               <input type="text" name="lastname" id="last"><br>
               <input type="submit">
-          </form>-->
+            </form>-->
           </div>
         </div>
         <div class="footer">
@@ -240,9 +240,9 @@
             </span>
           </div>
           <div class="footer--block">
-            <div class="wrapper">
-              <button class="notify">
-                <!-- <div class="notify-icon">
+            
+              <!--<button class="notify">
+                <div class="notify-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 24">
                     <path
                       d="M12,24a3.07,3.07,0,0,0,3-3H9A3.12,3.12,0,0,0,12,24Z"
@@ -275,18 +275,24 @@
                       stroke-width="1.5"
                     />
                   </svg>
-                </div> -->
+                </div>
                 <span class="notify-label">Get Notifications</span>
                 <span class="notify-off-label">Turn Off Notifications</span>
-              </button>
-              <div class="form" id="myform">
-                <!--<form method="POST" action="/api/user">-->
-                <input class="email-input" placeholder="Your email here." />
-                <input class="name-input" placeholder="Your name here." />
+              </button>-->
               
-              </div>
-              <button class="newsletter">
-                <!-- <div class="newsletter-icon">
+                <form method="POST" action="/api/user" class="form-inline">
+                <div>
+                  <input class="email-input" placeholder="Your email here." name="name" />
+                </div>
+                <div>
+                  <input class="name-input" placeholder="Your name here." name="email"/>
+                </div>
+                <input class="form-label" type="submit" value="Subscribe!">
+                </form>
+              
+              
+              <!--<button class="newsletter" type="submit">
+                <div class="newsletter-icon">
                   <svg
                     version="1.1"
                     id="iconmonstr"
@@ -304,11 +310,11 @@
                       d="M24,0l-6,22l-8.129-7.239l7.802-8.234L7.215,13.754L0,12L24,0z M9,16.669V24l3.258-4.431L9,16.669z"
                     />
                   </svg>
-                </div> -->
-                <span class="start-label">Get Newsletter</span
-                ><span class="form-label">Add Me</span>
-              </button>
-            </div>
+                </div>
+                <span class="start-label">Get Newsletter</span>
+              </button>-->
+            
+            
           </div>
 
           <div class="footer--block">
