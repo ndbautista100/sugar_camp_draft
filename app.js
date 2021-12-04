@@ -23,14 +23,14 @@ db.once('open', function() {
     console.log("Connection Successful!");
 });
 app.use(express.urlencoded({extended: true}));
-app.use(express.static(__dirname + '/index.html'));
+app.use(express.static(__dirname));
 
 
  app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
  });
 
- app.post("./api/user", (req, res)=>{
+ app.post("/api/user", (req, res)=>{
    console.log(req.body);
   /*const SaveUser = new UserModel(req.body);
   SaveUser.save((error, savedUser)=>{
