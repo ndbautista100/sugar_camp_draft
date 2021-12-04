@@ -27,6 +27,7 @@ newsletterButton.addEventListener("click", () => {
     tl.to(nameInput, duration, { opacity: 0, y: transitionY, ease: easing }, '-0.1');
     tl.to(notifyButton, duration, { opacity: 1, y: 0, ease: easing });
     tl.play();
+    console.log("open");
   } else {
     var tl = new TimelineLite();
     tl.call(() => {
@@ -39,6 +40,7 @@ newsletterButton.addEventListener("click", () => {
     });
     tl.to(nameInput, duration, { opacity: 1, y: 0, ease: easing });
     tl.play();
+    console.log("close");
   }
   isFormActive = !isFormActive;
 });
