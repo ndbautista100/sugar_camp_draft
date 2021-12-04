@@ -38,8 +38,8 @@ app.use(express.static(__dirname));
       res.json(savedUser)
   })*/
   const user = new UserModel({
-    Name: req.body.firstname,
-    Email: req.body.lastname,
+    Name: req.body.name,
+    Email: req.body.email,
     // ...
   });
   user.save();
