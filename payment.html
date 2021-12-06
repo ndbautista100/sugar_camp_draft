@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The SugarCamp</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <nav class="navbar">
@@ -81,10 +82,10 @@
               <img
                 src="images/shoppingcart.png"
                 alt="pic"
-                style="width: 90%; height: 100%; object-fit: contain"
+                style="width: 100%; height: 100%; object-fit: contain"
                 href="/"
               />
-              <span style="font-size: 1.5vw; width: 10%">0</span>
+              <span>0</span>
             </a>
           </div>
         </div>
@@ -141,7 +142,7 @@
       </ul>
     </div>
   </nav>
-<div class='container'>
+<!--<div class='container'>
   <div class='window'>
     <div class='order-info'>
       <div class='order-info-content'>
@@ -203,57 +204,59 @@
             </tr>
           </tbody>
         </table>
-
-
-<div class='line'></div>
-        <div class='total'>
-          <span style='float:left;'>
-            <div class='thin dense'>Tax</div>
-            <div class='thin dense'>Delivery</div>
-            TOTAL
-          </span>
-          <span style='float:right; text-align:right;'>
-            <div class='thin dense'>tax</div>
-            <div class='thin dense'>cost</div>
-            total
-          </span>
-        </div>
-</div>
-</div>
-        <div class='credit-info'>
-          <div class='credit-info-content'>
-            <!--<table class='half-input-table'>
-              <tr><td>Please select your card: </td><td><div class='dropdown' id='card-dropdown'><div class='dropdown-btn' id='current-card'>Visa</div>
-                <div class='dropdown-select'>
-                <ul>
-                  <li>Master Card</li>
-                  <li>American Express</li>
-                  </ul></div>
-                </div>
-               </td></tr> removed because formatting is off
-            </table>-->
-            <img src='https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png' height='80' class='credit-card-image' id='credit-card-image'></img>
-            Card Number
-            <input class='input-field'></input>
-            Card Holder
-            <input class='input-field'></input>
-            <table class='half-input-table'>
-              <tr>
-                <td> Expires
-                  <input class='input-field'></input>
-                </td>
-                <td>CVC
-                  <input class='input-field'></input>
-                </td>
-              </tr>
-            </table>
-            <button class='pay-btn'>Checkout</button>
-
-          </div>
-
-        </div>
-      </div>
     </div>
+  </div>
+</div>-->
+<div class="products-container">
+  <div class="product-header">
+    <h5 class="product-title">PRODUCT</h5>
+    <h4 class="price">PRICE</h5>
+    <h5 class="quantity">QUANTITY</h5>
+    <h4 class="total">TOTAL</h5>
+  </div>
+  <div class="products"></div>
+  <div class='credit-info'>
+    <div class='credit-info-content'>
+      <!--<table class='half-input-table'>
+        <tr><td>Please select your card: </td><td><div class='dropdown' id='card-dropdown'><div class='dropdown-btn' id='current-card'>Visa</div>
+          <div class='dropdown-select'>
+          <ul>
+            <li>Master Card</li>
+            <li>American Express</li>
+            </ul></div>
+          </div>
+         </td></tr> removed because formatting is off
+      </table>-->
+      Card Number
+      <input class='input-field'></input>
+      Card Holder
+      <input class='input-field'></input>
+      <table class='half-input-table'>
+        <tr>
+          <td> Expires
+            <input class='input-field'></input>
+          </td>
+          <td>CVC
+            <input class='input-field'></input>
+          </td>
+        </tr>
+      </table>
+      
+  
+    </div>
+  
+  </div>
+  <a href="payment.html" style="position: relative">
+    <button style="background-color: #978f56; float: right" class="button" type="button">Checkout</button>
+</a>
+</div>
+
+
+        
+        
+    
+  
 </body>
 <script src="store.js"> </script>
+</html>
 
