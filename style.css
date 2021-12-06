@@ -63,7 +63,7 @@ h2 {
   width: 100%;
 }
 .half-input-table td:first-of-type {
-  border-right: 10px solid #4488dd;
+  border-right: 10px solid #978f56;;
   width: 50%;
 }
 .window {
@@ -94,7 +94,7 @@ h2 {
   justify-content: center;
   position: relative;
 }
-.price {
+.price h4{
   bottom: 0px;
   position: absolute;
   right: 0px;
@@ -146,7 +146,7 @@ h2 {
   transition: all 0.2s ease;
 }
 
-.total {
+.total h4{
   margin-top: 25px;
   font-size: 20px;
   font-size: 1.3rem;
@@ -176,9 +176,9 @@ h2 {
   margin-right: auto;
 }
 .credit-info {
-  background: #4488dd;
-  height: 100%;
-  width: 50%;
+  background-color: #978f56;
+  height: 50%;
+  width: 100%;
   color: #eee;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -191,8 +191,8 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   box-sizing: border-box;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 10%;
+  padding-right: 10%;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   position: relative;
@@ -238,7 +238,7 @@ h2 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 50%;
 }
 @media (max-width: 600px) {
   .window {
