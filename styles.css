@@ -23,6 +23,10 @@
   /* margin-bottom: 0.5%; */
 }
 
+.email-input {
+  width: 100%;
+}
+
 .navbar__container {
   display: flex;
   /* justify-content: space-between; */
@@ -309,7 +313,6 @@
   height: 49px;
   margin-left: 20px;
   margin-right: 80px;
-  
 }
 
 /* .img_james {
@@ -785,6 +788,7 @@
   /* justify-content: space-evenly; */
   /* padding-left: 200px; */
   font-size: 75%;
+  overflow-wrap: break-word;
 }
 
 .gif_img {
@@ -831,6 +835,10 @@
   margin-left: auto;
   margin-right: auto;
   text-align: left;
+}
+
+.form-label {
+  width: 100%;
 }
 
 .contact-container-child {
