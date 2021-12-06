@@ -188,12 +188,13 @@
   /* margin: 0 auto; */
   /* font-size: 3rem; */
   width: 100%;
-  height: 75%;
+
   /* text-align: center; */
   color: rgb(7, 7, 7);
   padding-bottom: 5%;
   justify-content: center;
   align-items: center;
+  display: flex;
 }
 
 .main3 {
@@ -212,12 +213,15 @@
   background-color: #ffffff;
   /* margin: 0 auto; */
   /* font-size: 2rem; */
-  width: 100%;
+  /* width: 100%;
+  height: 50%; */
   /* text-align: center; */
-  margin-bottom: 3%;
+  margin-bottom: 50px;
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .main__container {
@@ -308,11 +312,11 @@
   
 }
 
-.img_james {
+/* .img_james {
   float: right;
   max-width: 100%;
   max-height: 100%;
-}
+} */
 
 .about__img--container {
   text-align: center;
@@ -390,32 +394,35 @@
 
 .main__about {
   width: 100%;
-  height: 75%;
+  height: 90%;
   flex-direction: row;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   padding-left: 2%;
   padding-right: 2%;
+  justify-content: space-evenly;
 }
 
 .card1 {
-  width: 50%;
+  /* flex: 50%; */
   /* height: 100%; */
+  width: 1000px;
   text-align: center;
-  padding: 2% 2% 2% 2%;
+  padding: 2%;
   justify-content: center;
   align-items: center;
   font-size: 1vw;
   /* background-color: red; */
 }
 .card2 {
-  width: 50%;
-  height: 100%;
-  display: flex;
+  flex: 50%;
+  width: 1000px;
+  padding: 2%;
+  /* height: 100%; */
   align-items: center;
   justify-content: center;
-  /* background-color: blue; */
+  /* margin: 2%; */
 }
 .card3 {
   grid-area: c;
@@ -425,14 +432,17 @@
 }
 
 .sidebar {
-  width: 49px;
-  height: 100px;
-  margin-top: 30px;
-  height: 80 px;
-  padding-left: 29%;
+  grid-area: b;
+  width: 75%;
+  height: 100%;
+  /* margin-top: 30px; */
+  /* padding-left: 29%; */
   text-align: center;
   display: flex;
   font-size: 20px;
+  /* background-color: red; */
+  align-items: center;
+  justify-content: center;
 }
 
 .sidebar h5:hover {
@@ -441,28 +451,41 @@
 
 .main_shop {
   display: grid;
-  grid-template-columns: 0.5fr 0.4fr 0.3fr 0.6fr;
-  column-gap: 5px;
+  /* background-color: red; */
+  grid-template-columns:
+    20% fit-content(20%) fit-content(20%) fit-content(20%)
+    20%;
+  grid-template-rows: fit-content(50%) fit-content(50%);
+  column-gap: 5%;
+  row-gap: 3%;
   grid-template-areas:
-    "a b c d"
-    "e f g h";
-  background-color: #ffffff;
+    "a b c d e"
+    "f g h i j";
+  /* background-color: #ff9999; */
   width: 100%;
+  height: 100%;
 
   color: rgb(7, 7, 7);
 }
 .img_shop_card {
   grid-area: c;
-  margin-top: auto;
-  margin: 50px;
-  padding-left: 70px;
-  margin-bottom: 50px;
+  /* margin-top: auto; */
+  /* margin: 50px; */
+  /* padding-left: 70px; */
+  /* margin-bottom: 50px; */
   width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
 }
 .img_meloncamp_template {
   background-image: url("images/IMG_3774.jpg");
   width: 300px;
   height: 400px;
+  object-fit: contain;
   background-origin: border-box;
   background-repeat: no-repeat;
 
@@ -474,6 +497,7 @@
   background-image: url("images/IMG_3782.jpg");
   width: 300px;
   height: 400px;
+  object-fit: contain;
   background-origin: border-box;
   background-repeat: no-repeat;
 
@@ -485,6 +509,7 @@
   background-image: url("images/IMG_3750.jpg");
   width: 300px;
   height: 400px;
+  object-fit: contain;
   background-origin: border-box;
   background-repeat: no-repeat;
 
@@ -496,6 +521,7 @@
   background-image: url("images/happycamp.PNG");
   width: 300px;
   height: 400px;
+  object-fit: contain;
   background-origin: border-box;
   background-repeat: no-repeat;
 
@@ -518,26 +544,33 @@
 
 .img_shop_card2 {
   grid-area: d;
-  margin-top: 50px;
-  margin: 50px;
-  padding-left: 1px;
-  margin-bottom: 50px;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
 }
 .img_shop_card3 {
-  grid-area: g;
-  margin-top: auto;
-  margin: 50px;
-  padding-left: 70px;
+  grid-area: h;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
 }
-.img_shop_card4 {
-  grid-area: f;
+/* .img_shop_card4 {
+  grid-area: i;
   margin-top: auto;
   margin: 50px;
   padding-left: 1px;
-}
+} */
 
 .product-info {
-  margin-top: auto;
+  /* margin-top: auto; */
 }
 
 .add-cart {
@@ -660,7 +693,7 @@
   display: table; */
   width: 100%;
   height: 100%;
-  background-color: blue;
+  /* background-color: blue; */
 }
 .column {
   width: auto;
@@ -679,22 +712,32 @@
   width: 80%;
   right: 100px; */
   /* height: 100%; */
-  width: 50%;
+  /* width: 50%; */
+  /* width: 100%;
+  height: 100%; */
+  width: 1000px;
   text-align: center;
   align-items: center;
   justify-content: center;
-  padding: 1%;
+  /* padding: 1%; */
   color: #978f56;
-  background-color: #ffffff;
   font-size: 150%;
+  display: flex;
+  flex-direction: column;
+  /* padding: 20px; */
 }
 
 .gif_container {
   /* height: 40%; */
-  width: 50%;
+  /* width: 50%; */
+  /* min-width: 200px; */
+  width: 1000px;
+  align-items: center;
+  justify-content: center;
   /* background-color: #000000; */
   /* align-items: center;
   justify-content: center; */
+  /* padding: 20px; */
 }
 
 .footer {
@@ -750,9 +793,10 @@
   max-width: 150%;
   height: 20%;
   right: 500px; */
-  position: relative;
+  /* position: relative; */
+  height: 100%;
   padding: 5%;
-  width: 80%;
+  width: 100%;
   object-fit: contain;
   /* align-self: center; */
 }
@@ -762,6 +806,7 @@
   height: 400px;
   /* The height is 400 pixels */
   width: 100%;
+  min-width: 200px;
   /* The width is the width of the web page */
 }
 
