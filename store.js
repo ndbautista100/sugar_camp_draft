@@ -210,24 +210,25 @@ function displayCart(){
                     </ion-icon>
                 
             </div>
-            <div class="price">$${item.price}</div>
-            <div class="quantity">
-                <ion-icon name="caret-back-outline" onClick="remove(this)">
-                    <span id="span_remid" style="display:none">${item.name}</span>
-                    <span id="span_remprice" style="display:none">${item.price}</span>
-                    <span id="span_remquantity" style="display:none">${item.inCart}</span>
-                </ion-icon>
-                <span>${item.inCart}</span>
-                <ion-icon name="caret-forward-outline" onClick="addOne()">
-                    <span id="span_add" style="display:none">${item.name}</span>
-                    <span id="span_addprice" style="display:none">${item.price}</span>
-                    <span id="span_addquantity" style="display:none">${item.inCart}</span>
-                </ion-icon>
+                <div class="price">$${item.price}</div>
+                <div class="quantity">
+                    <ion-icon name="caret-back-outline" onClick="remove(this)">
+                        <span id="span_remid" style="display:none">${item.name}</span>
+                        <span id="span_remprice" style="display:none">${item.price}</span>
+                        <span id="span_remquantity" style="display:none">${item.inCart}</span>
+                    </ion-icon>
+                    <span>${item.inCart}</span>
+                    <ion-icon name="caret-forward-outline" onClick="addOne()">
+                        <span id="span_add" style="display:none">${item.name}</span>
+                        <span id="span_addprice" style="display:none">${item.price}</span>
+                        <span id="span_addquantity" style="display:none">${item.inCart}</span>
+                    </ion-icon>
                 
-            </div>
-            <div class="total">
-                $${item.inCart * item.price} 
-            </div>`
+                </div>
+                <div class="total">
+                    $${item.inCart * item.price} 
+                </div>
+            `
             }else{
             productContainer.innerHTML += `
             <div class="product">
@@ -257,10 +258,10 @@ function displayCart(){
             <h4 class="basketTotal">
                  $${cartCost}
             </h4>
-            <a href="payment.html">
-                <button type="button">Checkout</button>
-            </a>
-        </div>`
+            
+        </div>
+        <div>
+        `
         
 
     }
