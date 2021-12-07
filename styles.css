@@ -875,3 +875,10 @@
 .button :hover {
   color: blue;
 }
+textarea {
+  padding: 15px;
+}
+textarea::placeholder {
+  text-align: center;
+  font-size: 15px;
+}
