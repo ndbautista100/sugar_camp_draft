@@ -13,7 +13,12 @@
       rel="stylesheet"
     />
     <style>
-      h5,
+      h5 {
+        font-size: 30px;
+        font-family: "Shrikhand";
+        text-decoration: none;
+        color: #020202;
+      }
       h3,
       h4,
       a {
@@ -160,30 +165,39 @@
     </nav>
 
     <div class="main_shop">
-      <div class="sidebar">
-        <aside>
-          <a href="/shirts.html">
-            <h5>SHIRTS</h5>
-          </a>
-
+      <div class="sidebar_container">
+        <div class="sidebar">
+          <!-- <aside
+            style="
+              height: 50%;
+              width: 75%;
+              align-items: center;
+              font-size: 2vw;
+              /* background-color: yellow; */
+            "
+          > -->
+          <a href="/shirts.html"><h5>SHIRTS</h5> </a>
           <a href="/accessories.html"> <h5>ACCESSORIES</h5></a>
           <a href="/shop.html"> <h5>ALL</h5></a>
-        </aside>
-      </div>
-      <div class="img_shop_card">
-        <div class="img_meloncamp_template" alt="pic" href="/"></div>
-        <div class="product-info">
-          <h3>Betsy Vintage Tee</h3>
-          <h4>$15.99</h4>
-          <a class="add-cart" href="#">Add Cart</a>
+          <!-- </aside> -->
         </div>
       </div>
-      <div class="img_shop_card2">
-        <div class="img_cococamp_template" alt="pic"></div>
-        <div class="product-info">
-          <h3>Temptations Cafe Tee</h3>
-          <h4>$15.99</h4>
-          <a class="add-cart" href="#">Add Cart</a>
+      <div class="shop_item_container">
+        <div class="img_shop_card">
+          <div class="img_meloncamp_template" alt="pic" href="/"></div>
+          <div class="product-info">
+            <h3>Betsy Vintage Tee</h3>
+            <h4>$15.99</h4>
+            <a class="add-cart" href="#">Add Cart</a>
+          </div>
+        </div>
+        <div class="img_shop_card">
+          <div class="img_cococamp_template" alt="pic"></div>
+          <div class="product-info">
+            <h3>Temptations Cafe Tee</h3>
+            <h4>$15.99</h4>
+            <a class="add-cart" href="#">Add Cart</a>
+          </div>
         </div>
       </div>
     </div>
