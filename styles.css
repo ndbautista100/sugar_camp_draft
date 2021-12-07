@@ -202,15 +202,22 @@
 }
 
 .main3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  /* grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "a b"
-    "c d";
-  background-color: #ffffff;
+    "c d"; */
+  /* background-color: red; */
   padding-top: 50px;
   padding-bottom: 50px;
   color: rgb(7, 7, 7);
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* height: 100%; */
+  width: 100%;
+  text-align: center;
 }
 
 .main4 {
@@ -339,41 +346,70 @@
   background-color: #fdfdfc;
 }
 .coconut__img--container {
-  float: none;
-  margin: auto;
-  padding-left: 50px;
-  background-color: #fdfdfc;
+  /* float: none;
+  margin: auto; */
+  height: 600px;
+  /* background-color: red; */
+  /* padding-left: 50px; */
+  /* grid-area: b; */
   padding-bottom: 50px;
-  grid-area: c;
+  width: 45%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  justify-content: space-evenly;
+  margin: 1%;
+  padding: 3%;
+  /* padding: 0.5%; */
 }
 
 .coconut__img--container p {
   color: #978f56;
 }
 .ogcamp__img--container {
-  float: none;
-  margin: auto;
-  padding-left: 50px;
-  background-color: #fdfdfc;
-  grid-area: d;
+  /* float: none;
+  margin: auto; */
+  /* background-color: red; */
+  height: 600px;
+  /* padding-left: 50px; */
+  /* grid-area: b; */
   padding-bottom: 50px;
+  width: 45%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  justify-content: space-evenly;
+  margin: 1%;
+  padding: 3%;
 }
 
 .ogcamp__img--container p {
   color: #978f56;
 }
 .happycamp__img--container {
-  float: none;
-  margin: auto;
-  background-color: #fdfdfc;
-  padding-left: 50px;
-  grid-area: b;
+  /* float: none;
+  margin: auto; */
+  /* background-color: red; */
+  /* padding-left: 50px; */
+  /* grid-area: b; */
+  height: 600px;
+  padding-bottom: 50px;
+  width: 45%;
+  min-width: 300px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 1%;
+  padding: 3%;
   padding-bottom: 50px;
 }
 
 .happycamp__img--container h1 {
-  float: left;
-  margin: auto;
+  /* float: left;
+  margin: auto; */
   background-color: #fdfdfc;
   padding-bottom: 50px;
   color: #978f56;
@@ -383,12 +419,21 @@
 }
 
 .melonca__img--container {
-  float: none;
-  margin: auto;
-  padding-left: 50px;
-  background-color: #fdfdfc;
-  grid-area: a;
+  /* float: none; */
+  /* margin: auto; */
+  /* background-color: red; */
+  height: 600px;
+  /* padding-left: 50px; */
+  /* grid-area: b; */
   padding-bottom: 50px;
+  width: 45%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  justify-content: space-evenly;
+  margin: 1%;
+  padding: 3%;
 }
 
 .melonca__img--container p {
