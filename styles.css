@@ -642,6 +642,11 @@
 
 .add-cart {
   position: center;
+  
+}
+.add-cart:hover {
+  position: center;
+  color:#978f56;
 }
 
 /* carthtml page*/
