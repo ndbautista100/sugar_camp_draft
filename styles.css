@@ -361,6 +361,7 @@
   justify-content: space-evenly;
   margin: 1%;
   padding: 3%;
+  position: relative;
   /* padding: 0.5%; */
 }
 
@@ -383,6 +384,7 @@
   justify-content: space-evenly;
   margin: 1%;
   padding: 3%;
+  position: relative;
 }
 
 .ogcamp__img--container p {
@@ -405,6 +407,7 @@
   margin: 1%;
   padding: 3%;
   padding-bottom: 50px;
+  position: relative;
 }
 
 .happycamp__img--container h1 {
@@ -434,6 +437,7 @@
   justify-content: space-evenly;
   margin: 1%;
   padding: 3%;
+  position: relative;
 }
 
 .melonca__img--container p {
@@ -927,4 +931,121 @@ textarea {
 textarea::placeholder {
   text-align: center;
   font-size: 15px;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.happycamp__img--container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 200px;
+  font-family: "Shrikhand";
+}
+.text2 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 200px;
+  font-family: "Shrikhand";
+}
+.overlay2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.melonca__img--container:hover .overlay2 {
+  opacity: 1;
+}
+.text3 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 200px;
+  font-family: "Shrikhand";
+}
+.overlay3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.coconut__img--container:hover .overlay3 {
+  opacity: 1;
+}
+.text4 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 200px;
+  font-family: "Shrikhand";
+}
+.overlay4 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.ogcamp__img--container:hover .overlay4 {
+  opacity: 1;
 }
