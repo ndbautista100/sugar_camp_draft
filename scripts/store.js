@@ -116,7 +116,7 @@ function addOne(){
     window.location.reload();
 }
 
-function remove(product){
+function remove(prod){
     const EL_button = event.currentTarget;
     //const id = this.closest("span"); // i.e: "245"
     var span_Text = document.getElementById("span_remid").innerText;
@@ -126,10 +126,10 @@ function remove(product){
     var favs = JSON.parse(window.localStorage.productsInCart || {});  //read and convert to object
     var cartNum = JSON.parse(window.localStorage.cartNumbers || {});
     var cost = parseInt(JSON.parse(window.localStorage.totalCost || {}));
-    if(favs[span_Text].inCart == 1)
+    if(favs[prod.id].inCart == 1)
     {
-        if (favs[span_Text]) {  //check if key exists 
-            delete favs[span_Text];
+        if (favs[prod.id]) {  //check if key exists 
+            delete favs[prod.id];
             cost =  Math.round(cost - span_Price); //remove the key from object
             cartNum = cartNum - 1;
         }
@@ -212,7 +212,7 @@ function displayCart(){
             </div>
                 <div class="price">$${item.price}</div>
                 <div class="quantity">
-                    <ion-icon name="caret-back-outline" onClick="remove(this)">
+                    <ion-icon name="caret-back-outline" id="${item.name}" onClick="remove(this)">
                         <span id="span_remid" style="display:none">${item.name}</span>
                         <span id="span_remprice" style="display:none">${item.price}</span>
                         <span id="span_remquantity" style="display:none">${item.inCart}</span>
@@ -234,7 +234,7 @@ function displayCart(){
             <div class="product">
                 <img src="./images/${item.name}.jpg">
                 <span>${item.name}</span>
-                    <ion-icon name="close-circle-outline" id="${item.name}" onClick="remove()">
+                    <ion-icon name="close-circle-outline" id="${item.name}" onClick="remove(this)">
                     <span id="span_remid" style="display:none">${item.name}</span>
                     <span id="span_remprice" style="display:none">${item.price}</span>
                     <span id="span_remquantity" style="display:none">${item.inCart}</span>
