@@ -188,6 +188,39 @@ function removeAll(prod){
     window.location.reload();
 }
 
+function removeCarrot(prod){
+    const EL_button = event.currentTarget;
+    //const id = this.closest("span"); // i.e: "245"
+    console.log(prod.id);
+    var span_Text = document.getElementById("span_id").innerText;
+    var span_Price = document.getElementById("span_price").innerText;
+    var span_Quantity = document.getElementById("span_quantity").innerText;
+    console.log(span_Price);
+    console.log("before : ", window.localStorage.productsInCart);  //display it
+    var favs = JSON.parse(window.localStorage.productsInCart || {});  //read and convert to object
+    var cartNum = JSON.parse(window.localStorage.cartNumbers || {});
+    var cost = parseInt(JSON.parse(window.localStorage.totalCost || {}));
+    console.log("cart numbers", typeof(favs[prod.id].inCart));
+    if (favs[prod.id].inCart == 1) {  //check if key exists 
+        cartNum = cartNum - 1;
+        delete favs[prod.id];
+        cost =  Math.round(cost - (span_Quantity * span_Price)); //remove the key from object
+        //cartNum = cartNum - favs[prod.id].inCart;
+    }
+    else{
+        cartNum = cartNum - 1;
+        favs[prod.id].inCart = favs[prod.id].inCart - 1;
+        cost = Math.round(cost - span_Price);
+    }
+    window.localStorage.productsInCart = JSON.stringify(favs);  //save it back
+    window.localStorage.cartNumbers = JSON.stringify(cartNum);
+    window.localStorage.totalCost = JSON.stringify(cost);
+    console.log("after : ", window.localStorage.productsInCart);
+    console.log("after : ", window.localStorage.cartNumbers);
+    console.log("after : ", window.localStorage.totalCost);
+    window.location.reload();
+}
+
 function displayCart(){
     let cartItems = localStorage.getItem("productsInCart");
     cartItems = JSON.parse(cartItems);
@@ -212,7 +245,7 @@ function displayCart(){
             </div>
                 <div class="price">$${item.price}</div>
                 <div class="quantity">
-                    <ion-icon name="caret-back-outline" id="${item.name}" onClick="remove(this)">
+                    <ion-icon name="caret-back-outline" id="${item.name}" onClick="removeCarrot(this)">
                         <span id="span_remid" style="display:none">${item.name}</span>
                         <span id="span_remprice" style="display:none">${item.price}</span>
                         <span id="span_remquantity" style="display:none">${item.inCart}</span>
